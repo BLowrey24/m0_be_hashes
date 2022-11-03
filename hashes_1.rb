@@ -6,24 +6,28 @@ Activity:
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
+foods = {
+  apples: 23, 
+  grapes: 507, 
+  eggs: 48
+}
 p zoo
-
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+puts foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+puts foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+puts foods.values[1]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+foods.store(:tacos, 10)
+puts foods
 
 
 #-------------------
@@ -37,16 +41,24 @@ p zoo
 # Declare a variable that stores hash. Each key should be an attribute of an email and each
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
-# Write code that prints your email hash to the terminal.
+email = {
+  sender: "bostonlowrey@gmail.com",
+  subject: "Turing",
+  sent_to: "random@gmail.com",
+  opened: false,
+  date_time: ["Dec 11, 2003", "5:40pm"],
+}
 
+# Write code that prints your email hash to the terminal.
+puts email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.keys
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+puts email.values
 
 
 #-------------------
@@ -97,3 +109,29 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+
+emails =[
+{
+  sender: "bostonlowrey@gmail.com",
+  subject: "Turing",
+  sent_to: "random@gmail.com",
+  opened: false,
+  date_time: ["Dec 11, 2003", "5:40pm"],
+},
+ {
+  sender: "lowrey@gmail.com",
+  subject: "Food",
+  sent_to: "Dawson@gmail.com",
+  opened: true,
+  date_time: ["Jan 30, 2020", "6:12am"],
+},
+ {
+  sender: "boston@gmail.com",
+  subject: "Parents",
+  sent_to: "urmom@gmail.com",
+  opened: false,
+  date_time: ["Nov 20, 1987", "7:20pm"],
+}
+  ]
+
+puts emails
